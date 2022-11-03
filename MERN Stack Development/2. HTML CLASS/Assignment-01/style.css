@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    display: flex; 
+    margin-top: 20%;
+    margin-bottom: 20%;
+    background-color: white;
+}
+
+caption{
+    color: black;
+}
+
+table{
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+tbody th, td{
+    border: 1px solid #949393;
+    padding: 8px;
+    font-size: medium;
+}
+
+.green{
+    background-color: aquamarine;
+}
+.orange{
+    background-color: lightsalmon;
+}

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+nav h1{
+    margin-top: 20px;
+    margin-left: 25%;
+    color: orange;
+}
+aside{
+    position: absolute;
+    width: 40px;
+    right: 29%;
+    top: 68px;
+    align-items: center;
+}
+
+aside .aside1{
+    position: relative;
+    background-color: orange;
+    color: aliceblue;
+    bottom: 0px;
+    padding: 11px;  
+}
+
+section{
+    position: absolute;
+    width: 40%;
+    height: 88%;
+    margin-top: 10px;
+    margin-left: 25%;
+    
+}
+
+
+section .aside2{
+    position: relative;
+    padding: 6px;
+    font-size: 10px;
+}
+
+section .aside2 h2{
+   color: orange;
+}
+
+section .aside2 p{
+    color: aliceblue;
+}
+
+.circle1{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: limegreen;
+    right: 20px;
+}
+
+
+.square1{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 80px;
+    height: 80px;
+    border: 100px;
+    background-color: yellow;
+
+}
+
+.square1:hover{
+    background-color: limegreen;
+}
+.circle1:hover{
+   background-color: yellow;
+}

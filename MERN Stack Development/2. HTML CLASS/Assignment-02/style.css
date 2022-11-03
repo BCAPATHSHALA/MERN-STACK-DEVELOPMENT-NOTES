@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    display: flex; 
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+caption{
+    font-size: large;
+    font-style: oblique;
+    background-color: #949393;
+    color: aliceblue;
+}
+
+table{
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #949393;
+    padding: 8px;
+}
+
+.a{
+    background-color: aquamarine;
+}
+
+.b{
+    background-color: lightcyan;
+}
+
+.c{
+    background-color: lightgreen;
+}
+
+td{
+    background-color: black;
+    color: aliceblue;
+}
