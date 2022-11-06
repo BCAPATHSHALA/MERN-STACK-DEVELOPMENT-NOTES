@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: #000000;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between; 
+       
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+li:hover{
+    color: #00f7ff;
+}
+
+nav p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: larger;
+    color: #ffffff;
+}
+
+.detail{
+    display: absolute;
+    width: 50%;
+    margin-left: 8%;
+    margin-top: 20%;
+}
+
+.detail h1,p{
+    padding-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+#food{
+    background-color: #eb0000;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px;
+}
+
+#places{
+    background-color: #eb0000;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px;
+}
+
+#places:hover{
+    background-color: #00dfeb;
+    color: #000000;
+}
+
+#food:hover{
+    background-color: #00dfeb;
+    color: #000000;
+}
+
+.aside{
+    position: absolute;
+    right: 20px;
+    top: 110px;
+    bottom: 0;
+    text-align: center;
+}
+.aside .circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #eb0000;
+    right: 0;
+    
+}
+
+.leftSquare{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #eb0000;
+    bottom: 60px;
+    left: 15px;
+
+}
+
+.footer p{
+    position: absolute;
+    width: 100vw;
+    color: #000000;
+    bottom: 0; 
+    padding: 5px; 
+    font-size: small;
+    font-weight: bold;
+
+}

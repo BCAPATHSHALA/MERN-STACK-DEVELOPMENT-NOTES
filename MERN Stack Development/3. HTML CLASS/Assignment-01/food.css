@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+nav{
+    padding: 10px;
+}
+
+table{
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100vw;
+}
+
+th, td{
+    border: 1px solid #949393;
+    padding: 8px;
+    text-align: center;
+}
+
+th:hover{
+    background: black;
+    color: white;
+}
+
+.footer a{
+    position: absolute;
+    text-decoration: none;
+    width: 16vw;
+    color: #000000;
+    bottom: 0; 
+    padding: 5px; 
+    font-size: small;
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
+    
+
+}
