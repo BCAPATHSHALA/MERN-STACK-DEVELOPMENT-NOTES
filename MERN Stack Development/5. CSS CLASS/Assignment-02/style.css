@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-box{
+    display: grid;
+    place-items: center;
+
+}
+
+.outer-box{
+    margin-top: 20vh;
+    height:440px;
+    border: 5px solid black;
+    
+}
+
+.outer-box h3,pre,a,p,span{
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.outer-box span{
+    color: #707070;  
+}
+
+.outer-box p{
+    color: #3f3f3f;   
+}
+
+.outer-box a{
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    padding: 2px;
+    border: 1px solid black;  
+    margin-bottom: 10px ;
+}
