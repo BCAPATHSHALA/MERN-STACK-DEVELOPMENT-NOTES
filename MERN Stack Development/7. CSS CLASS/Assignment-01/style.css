@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center; 
+}
+
+.outer-box{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    width: 90vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.inner-box{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 0.1px solid #dcdcdc;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.brand{
+    align-items: center;
+    height: 55px;
+    font-size: large;
+}
+
+.inner-div{
+    height: 35px;
+    font-size: small;
+    border-bottom: 0.5px solid #dcdcdc;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    height: 60px;
+}
+.price p{
+    font-size: small;
+    color: #5f5e5e
+}
+
+.sign-up{
+    height: 50px;
+    
+}
+.sign-up span{
+
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #19833a;
+    
+}
+
+.outer-box .brand,.inner-div,.price,.sign-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basic-in,.premium-in{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.pro-in,.sign-up{
+    color: white;
+    background-color: #5f5e5e;
+}
+
+.sign-up{
+    color: white;
+    background-color: #e4eddc;
+}
