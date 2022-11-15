@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Outer div CSS */
+.outer-div {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header div CSS */
+.header-div {
+    display: flex;
+    width: 100vw;
+    height: 10%;
+    justify-content: space-around;
+}
+
+.inner-header1 {
+    display: flex;
+    width: 60%;
+    gap: 5%;
+    align-items: center;
+}
+
+.inner-header1 ul,
+li,
+a {
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+    color: #111010;
+    font-size: medium;
+    text-decoration: none;
+}
+.inner-header1 a:hover {
+    text-decoration: underline overline #2563eb;
+}
+.header-div .button {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-div .button button {
+    height: 50%;
+    width: 10rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.header-div .button button,
+i {
+    font-weight: bold;
+}
+
+.header-div .button i {
+    margin-right: 8%;
+}
+
+.chrome {
+    background-color: #ffffff;
+    border-color: #e7eff5;
+}
+
+.mac {
+    background-color: #2563eb;
+    color: white;
+    border-color: #939393;
+}
+
+/* Center div CSS */
+.center-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70%;
+}
+
+.content-box {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.content-box p {
+    margin-bottom: -10px;
+}
+
+.header-div .button {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box span {
+    color: #2563eb;
+    text-decoration: underline;
+    text-decoration-color: #004ef528;
+}
+
+.content-box h1 {
+    font-size: 3rem;
+}
+
+.center-div .button button {
+    height: 75%;
+    width: 10rem;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.center-div .button button,
+i {
+    font-weight: bold;
+}
+
+.center-div .button i {
+    margin-right: 8%;
+}
+
+.center-div .chrome {
+    background-color: #2e2d2d;
+    border-color: #5b5d5d;
+    color: white;
+}
+
+
+/* Footer div CSS */
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 30%;
+}
+
+.footer-main .footer-head {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.footer-div .empty {
+    height: 20px;
+    width: 20%;
+    background-color: #111010;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.browser {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+
+}
+
+.browser .div-i {
+    display: flex;
+    gap: 10%;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.div-p span {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #939393;
+}
