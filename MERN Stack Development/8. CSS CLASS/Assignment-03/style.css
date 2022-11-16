@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-box {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.box {
+    border: 2px solid #39b4d2;
+    background-color: #676767c7;
+    color: white;
+}
+
+.title-heading {
+    width: 100%;
+    height: 100%;
+    grid-row: 1/3;
+}
+
+.blog-entry {
+    grid-row: 3/5;
+}
+
+.my-name {
+    grid-row: 5/7;
+}
+
+/* Title Heading CSS*/
+.in-box{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
+
+.div-img img{
+    border: 5px solid orange;
+    width: 100%;
+    height: -50%;
+}
+
+.in-box .div-in{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 40%;
+}
+
+.in-box .div-in button{
+    background-color: #181818;
+    border: 2px solid green;
+    border-radius: 8px;
+    font-size: medium;
+    color: white;
+}
+.in-box .div-in strong{
+    background-color: #181818;
+    border: 2px solid green;
+    border-radius: 8px;
+    font-size: medium;
+    color: white;
+}
+
+.in-box .div-paragraph{
+    background-color: #181818;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+.popular-post .inner-box{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
+.popular-post .inner-box .div-box{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.tags .inner-box{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+.tags .inner-box .div1{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 10px;
+}
+.tags .inner-box .div1 p{
+    
+    background-color: #39b4d2;
+    border-radius: 8px;
+    text-align: center;
+}
+.tags .inner-box .div1 .travel{
+    background-color: #181818;
+}
+@media screen and (min-width: 600px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outer-box {
+        width: 90%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .box {
+        border: 2px solid #676767c7;
+        background-color: #39b4d2;
+        color: white;
+    }
+
+    .title-heading {
+
+        grid-column: 1/2;
+        grid-row: 1/5;
+    }
+
+    .blog-entry {
+        grid-column: 1/2;
+        grid-row: 5/9;
+    }
+
+    .my-name {
+
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+
+    .popular-post {
+
+        grid-column: 2/3;
+        grid-row: 4/7;
+    }
+
+    .tags {
+        grid-column: 2/3;
+        grid-row: 7/9;
+    }
+
+
+}
