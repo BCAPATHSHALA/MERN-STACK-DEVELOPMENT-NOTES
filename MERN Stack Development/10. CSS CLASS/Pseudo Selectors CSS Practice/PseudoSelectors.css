@@ -1,0 +1,153 @@
+/* Phase:01 Some important pseudo classes */
+#list-one li:first-child{
+    color: green;
+    font-weight: bold;
+}
+
+#list-one li:last-child{
+    color: #00807a;
+    font-weight: bold;
+}
+
+
+
+#list-two li:nth-child(2n+1){
+    color: red;
+}
+
+#list-two li:nth-child(2n+0){
+    color: #6a00ff;
+}
+
+
+
+#list-three li:nth-last-child(2n+0){
+    color: #ff7b00;
+}
+
+p:nth-of-type(2n){
+    color: purple;
+}
+
+p:nth-last-of-type(1){
+    color: #33ff00;
+}
+
+p:lang(en){
+    color: #ff7b00;
+}
+p:lang(fr){
+    color: #6a00ff;
+}
+p:lang(de){
+    color: #33ff00;
+}
+
+
+/* Phase:02 For anchor tag pseudo classes */
+
+#list-phase2 ul a:link{
+    color: #6a00ff;
+}
+
+#list-phase2 ul a:hover{
+    color: #ffea00;
+}
+
+#list-phase2 ul a:visited{
+    color: #ff0000;
+}
+
+#list-phase2 ul a:active{
+    color: #ff00d4;
+}
+
+p:target{
+    background: #151515fe;
+    color: aqua;
+}
+
+/* Phase:03 For Form related pseudo classes */
+
+input:focus{
+    border: 5px solid red;
+}
+
+input[type='checkbox']:checked{
+    box-shadow: 0 0 0 3px #00d5ff;
+}
+
+input[type='radio']:checked + label{
+    box-shadow: 0 0 0 3px #ff0051;
+}
+
+input[type='text']:enabled{
+    border: 2px solid blue;
+}
+
+input:required{
+    border: 2px solid green;
+    background: #07538c;
+}
+
+input:in-range{
+    border: 2px solid rebeccapurple;
+    background: #07538c;
+}
+input:out-of-range{
+    border: 2px solid rgb(62, 58, 65);
+    background: #a5161b;
+}
+
+/* Phase:04 root pseudo class is for CSS variable */
+
+:root{
+    --mainColor: #159fcd
+}
+
+.div1{
+    background-color: var(--mainColor);
+}
+
+#mj{
+    color: var(--mainColor);
+}
+
+/* Phase:05 pseudo elements */
+p::first-letter{
+    color: #ffffff;
+}
+
+p::first-line{
+    color: #00807a;
+}
+
+p::selection{
+    color: white;
+    background: gray
+}
+
+::placeholder{
+    color: #ff0000;
+}
+p::before{
+    content: 'Before ';
+    background: #0ac923;
+    color: #ff0000;
+}
+p::after{
+    content: 'After ';
+    background: red;
+    color: white;
+}
+
+span:hover::before{
+    content: 'Before ';
+    background: #0ac923;
+    color: #ff0000;
+}
+span:hover::after{
+    content: 'After ';
+    background: red;
+    color: white;
+}

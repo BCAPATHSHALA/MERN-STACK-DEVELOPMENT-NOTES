@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-box {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 12px;
+}
+
+.box {
+    border: 5px solid #39b4d2;
+    background-color: #ffffffc7;
+    color: #363636;
+    border-radius: 5px;
+}
+
+.title-heading {
+    width: 100%;
+    height: 100%;
+    grid-row: 1/3;
+}
+
+.blog-entry {
+    grid-row: 3/5;
+}
+
+.my-name {
+    grid-row: 5/7;
+}
+
+/* Title Heading CSS*/
+.in-box{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
+
+.div-img img{
+    box-shadow: 0px 5px 5px #27b493;
+    width: 100%;
+    height: -50%;
+}
+
+.in-box .div-in{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 40%;
+}
+
+.in-box .div-in button{
+    background-color: #181818;
+    border: 2px solid green;
+    border-radius: 8px;
+    font-size: medium;
+    color: white;
+}
+.in-box .div-in strong{
+    background-color: #181818;
+    border: 2px solid green;
+    border-radius: 8px;
+    font-size: medium;
+    color: white;
+}
+
+.in-box .div-paragraph{
+    background-color: #ffffff;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+.popular-post .inner-box{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+}
+.popular-post .inner-box .div-box{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.tags .inner-box{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+.tags .inner-box .div1{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 10px;
+}
+.tags .inner-box .div1 p{
+    
+    background-color: #39b4d2;
+    border-radius: 8px;
+    text-align: center;
+}
+.tags .inner-box .div1 .travel{
+    background-color: #252525;
+    color: white;
+}
+
+
+
+/* Deskto CSS */
+@media screen and (min-width: 600px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outer-box {
+        width: 90%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5px;
+    }
+
+    .box {
+        border-radius: 5px;
+        border-color: #252525;
+        background-color: #ffffff;
+        color: #3a3434;
+    }
+
+
+    .title-heading {
+        grid-column: 1/5;
+        grid-row: 1/5;
+    }
+
+    .blog-entry {
+
+        grid-column: 1/5;
+        grid-row: 5/9;
+    }
+
+    .my-name {
+        grid-column: 5/6;
+        grid-row: 1/4;
+    }
+
+    .popular-post {
+
+        grid-column: 5/6;
+        grid-row: 4/7;
+    }
+
+    .tags {
+        grid-column: 5/6;
+        grid-row: 7/9;
+    }
+
+    /* CSS-2 */
+    .in-box{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 2px;
+        /* border: 2px solid grey; */
+        border-radius: 5px;
+    }
+    
+    .div-img img{
+        box-shadow: 0px 5px 5px #27b493;
+        width: 100%;
+        height: -50%;
+    }
+
+    .my-name .div-img img{
+        box-shadow: 0px 5px 5px #27b493;
+        width: 99%;
+        height: -50%;
+    }
+
+    .my-name .div-paragraph{
+
+        display: flex;
+        width: 99%;  
+        text-align: center;      
+    }
+
+    .div-in{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left:25px;
+        padding-right:25px ;
+    }
+
+    .in-box .div-in button{
+        background-color: #ffffff;
+        font-size: small;
+        border: 1px solid orange;
+        border-radius: 5px;
+        padding: 5px;
+        color: #252525;
+        font-size: x-small;
+    }
+    .in-box .div-in .comment{
+        background-color: #ffffff;
+        font-size: small;
+        border: 1px solid orange;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .in-box .div-in strong{
+        background-color: #ffffff;
+        font-size: small;
+        border: 1px solid orange;
+        border-radius: 5px;
+        padding: 5px;
+        color: #181818;
+    }
+
+    .my-name .in-box{
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 4px;
+    }
+    .my-name .in-box .div-h2,.div-strong,.div-paragraph{
+        padding: 2px;
+    }
+    .in-box span{
+        color: #8b8b8b;
+        margin-left:5px;
+    }
+   .popular-post .inner-box{
+        display: grid;
+        grid-template-columns: auto;
+        /* border: 2px solid grey; */
+        border-radius: 5px;
+        margin-left: 4px;
+    }
+
+    .inner-box .div-box{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px;
+
+    }
+
+    .inner-box .div1 p{
+        display: inline-block;
+        border: 2px solid orange;
+        background-color: #ffffff;
+        margin: 6px;
+        border-radius: 5px;
+        padding: 2px;
+    }
+
+    .tags .div0{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .tags .inner-box .div1 .travel{
+        background-color: #2b2e2f;
+        color: #ffffff;
+    }
+
+    .popular-post .inner-box .div-box .div1 i{
+        font-size: xx-large;
+    }
+}

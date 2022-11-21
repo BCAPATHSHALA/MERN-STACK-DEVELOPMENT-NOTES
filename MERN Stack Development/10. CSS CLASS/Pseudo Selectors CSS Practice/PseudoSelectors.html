@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <link rel="stylesheet" href="PseudoSelectors.css">
+</head>
+
+<body>
+
+    <h1>Manoj Nishad: CSS Pseudo Selectors Practice</h1>
+    <h1>Phase:01 Some important pseudo classes</h1>
+    <h4>List-One</h4>
+    <ul id="list-one">
+        <li> Lorem ipsum dolor sit amet.1 </li>
+        <li> Lorem ipsum dolor sit amet.2 </li>
+        <li> Lorem ipsum dolor sit amet.3 </li>
+        <li> Lorem ipsum dolor sit amet.4 </li>
+        <li> Lorem ipsum dolor sit amet.5 </li>
+        <li> Lorem ipsum dolor sit amet.6 </li>
+    </ul>
+
+    <h4>List-Two</h4>
+    <ul id="list-two">
+        <li> Lorem ipsum dolor sit amet.1 </li>
+        <li> Lorem ipsum dolor sit amet.2 </li>
+        <li> Lorem ipsum dolor sit amet.3 </li>
+        <li> Lorem ipsum dolor sit amet.4 </li>
+        <li> Lorem ipsum dolor sit amet.5 </li>
+        <li> Lorem ipsum dolor sit amet.6 </li>
+    </ul>
+
+    <h4>List-Three</h4>
+    <ul id="list-three">
+        <li> Lorem ipsum dolor sit amet.6 </li>
+        <li> Lorem ipsum dolor sit amet.5 </li>
+        <li> Lorem ipsum dolor sit amet.4 </li>
+        <li> Lorem ipsum dolor sit amet.3 </li>
+        <li> Lorem ipsum dolor sit amet.2 </li>
+        <li> Lorem ipsum dolor sit amet.1 </li>
+    </ul>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio sint optio nesciunt deserunt eligendi sapiente nam
+        aliquid necessitatibus nulla dolore.1</p>
+    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis eligendi odio non
+        ducimus deserunt?2</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur provident sint dolor exercitationem fugit,
+        ullam tenetur ut neque officiis commodi.3</p>
+
+    <ul id="list-three">
+        <li> Lorem ipsum dolor sit amet. </li>
+        <li> Lorem ipsum dolor sit amet. </li>
+        <li> Lorem ipsum dolor sit amet. </li>
+        <li> Lorem ipsum dolor sit amet. </li>
+        <li> Lorem ipsum dolor sit amet. </li>
+        <li> Lorem ipsum dolor sit amet. </li>
+    </ul>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio sint optio nesciunt deserunt eligendi sapiente nam
+        aliquid necessitatibus nulla dolore.4</p>
+    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis eligendi odio non
+        ducimus deserunt?5</p>
+
+        <h4>Language :lang</h4>
+        <p lang="en">Hello welcome to our website</p>
+        <p lang="fr">Bonjour sur notre site</p>
+        <p lang="de">Hallo willkommen auf unserer wesite</p>
+
+
+        <h1>Phase:02 For anchor tag pseudo classes</h1>
+        <ul id="list-phase2">
+            <li><a href="#">Home1</a></li>
+            <li><a href="#">Home2</a></li>
+            <li><a href="#">Home3</a></li>
+            <li><a href="#">Home4</a></li>
+        </ul>
+
+        <h4>:Traget class ka use</h4>
+        <ul id="list1-phase2">
+            <li><a href="#html">what is HTML?</a></li>
+            <li><a href="#css">what is CSS?</a></li>
+            <li><a href="#js">what is JavaScript?</a></li>
+        </ul>
+
+        <h6>All Ans:</h6>
+        <p id="html">HTML: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui hic consequatur laboriosam, reprehenderit at praesentium aliquid cumque sunt architecto repudiandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure tempore minus animi fugiat veniam facere, veritatis aliquid illum nihil doloribus! </p>
+        <p id="css">CSS: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure tempore minus animi fugiat veniam facere, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae a iste rem magni ad consequuntur unde, reprehenderit assumenda distinctio similique! veritatis aliquid illum nihil doloribus! </p>
+        <p id="js">JavaScript: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente asperiores sunt architecto unde iste neque error expedita nobis veritatis at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure tempore minus animi fugiat veniam facere, veritatis aliquid illum nihil doloribus! </p>
+
+
+        <h1>Phase:03 for Form related pseudo classes</h1>
+        <form action="">
+            <label>First Name:</label><input type="text" required placeholder="Enter first name">
+            <br><br>
+            <label>Last Name:</label><input type="text" placeholder="enter last name">
+            <br><br>
+            <label>Your age:</label><input type="number" min="10" max="20">
+            <br><br>
+            <label>Your Email-id:</label><input type="email" required>
+            <br><br>
+            <label>Your Hobbies:</label>
+            <label>Cricket</label><input name="hobby" type="checkbox">
+            <label >Sport</label><input name="hobby" type="checkbox">
+            <label >Travel</label><input name="hobby" type="checkbox">
+            <label >Reading</label><input name="hobby" type="checkbox">
+            <br><br>
+            <label>Your Gender:</label>
+            <label>Male</label><input name="gender" type="radio" required>
+            <label>Femaile</label><input name="gender" type="radio" required>
+            <br><br>
+            <label>Your Country:</label>
+            <select name="country" id="">
+                <option value="none">Select</option>
+                <option value="india">India</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="srilanka">Srilanka</option>
+                <option value="bangladesh">Bangladesh</option>
+            </select>
+            <br><br>
+            <input type="button" value="submit">
+            <input type="reset" value="reset">
+        </form>
+
+        <h1>Phase:04 root pseudo class is for CSS variable</h1>
+
+        <div class="div1">Hello Root Color</div>
+        <p id="mj">Hii Manoj</p>
+
+        <h1>Phase:05 pseudo elements</h1>
+        <p id="el">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo corporis error deleniti! Voluptatem reprehenderit non unde hic magni ut totam? Possimus nam consequuntur quod, deserunt nesciunt aliquam ipsa voluptate culpa atque sunt nulla sed fuga, soluta in enim, ex dolore?</p>
+        
+        <ul id="list-elements">
+            <li> Lorem ipsum dolor sit amet.6 </li>
+            <li> Lorem ipsum dolor sit amet.5 </li>
+            <li> Lorem ipsum dolor sit amet.4 </li>
+            <li> Lorem ipsum dolor sit amet.3 </li>
+            <li> Lorem ipsum dolor sit amet.2 </li>
+            <li> Lorem ipsum dolor sit amet.1 </li>
+        </ul>
+    
+        <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio sint optio nesciunt deserunt eligendi sapiente nam
+            aliquid necessitatibus nulla dolore Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet, voluptates odit adipisci consectetur debitis repudiandae dolor quaerat explicabo at.</span>
+
+            <p id="aAndb">Lorem ipsum dolor sit.</p>
+
+        </body>
+
+</html>

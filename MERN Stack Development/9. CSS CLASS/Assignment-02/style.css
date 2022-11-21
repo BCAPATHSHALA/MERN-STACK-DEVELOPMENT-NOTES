@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Mobile Phone CSS */
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 15px;
+    border: 1px solid black;
+}
+
+.box{
+    border: 3px solid red;
+    text-align: center;
+}
+
+.main-box{
+    grid-row-start: 3;
+    grid-row-end: span 4;
+}
+
+/* Tablet CSS */
+@media screen and (min-width: 600px){
+
+    .outer-box{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        row-gap: 15px;
+        border: 1px solid #0fed07;
+    }
+    .box{
+        border: 3px solid rgb(109, 106, 106);
+        text-align: center;
+    }
+
+    .header-box,.navigation-box,.ads-box,.footer-box{
+        grid-column-start: 1;
+        grid-column-end: span 5;
+
+    }
+
+    .sidebar-box{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 3;
+        grid-row-end: span 4;
+    }
+
+    .main-box{
+        grid-column-start: 3;
+        grid-column-end: span 3;
+        grid-row-start: 3;
+        grid-row-end: span 4;
+        margin-left: 2px;
+    }
+    
+}
+ 
+
+/* Desktop CSS */
+@media screen and (min-width: 800px){
+
+    .outer-box{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        row-gap: 15px;
+        border: 1px solid #0fed07;
+    }
+    
+    .box{
+        border: 3px solid #a125b7;
+        text-align: center;
+    }
+
+    .header-box,.footer-box{
+        grid-column-start: 1;
+        grid-column-end: span 5;
+
+    } 
+
+    .navigation-box{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        margin-left: 2px;
+    }
+
+    .main-box{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: span 5;
+    }
+
+    .sidebar-box{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: span 6;
+    }
+
+    .ads-box{
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: span 6;
+        margin-left: 2px;
+    }
+
+    
+    
+}
+ 

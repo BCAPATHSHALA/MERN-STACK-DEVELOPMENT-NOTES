@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #eee;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-size: 40px;
+    box-shadow: 0 0 15px #0000001a;
+
+    animation-name: sample-name;
+    /* Connect the animation name with keyframe */
+    animation-duration: 2s;
+    /* animation kitne time duration ke liye chlana hai */
+    animation-iteration-count: infinite;
+    /* animation loop n /infinite time chalega */
+    animation-direction: alternate;
+    /* animation direction is used to erase the jhataka na lage */
+    animation-delay: 1s;
+    /* start animation after 2s */
+    animation-timing-function: steps(4);
+    /* animation 4 step me chalegi */
+
+    /* animation: sample-name 2s steps(4) 1s infinite alternate; */
+}
+
+@keyframes sample-name {
+    /* from{ border-radius: 0%;}
+    to{ border-radius: 50%;} */
+
+    0% {
+        border-radius: 0%;
+        background-color: greenyellow;
+    }
+
+    50% {
+        background-color: orange;
+    }
+
+    100% {
+        border-radius: 50%;
+        background-color: tomato;
+    }
+
+}
+
+
+.container1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card1 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    font-size: 40px;
+    box-shadow: 0 0 15px #2d2a2a1a;
+    color: #eee;
+
+    animation: sample 2s 5s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes sample{
+    0%{background: yellow; width: 250px;}
+    50%{background: green; width: 350px;}
+    100%{background: red; width: 450px;}
+}
+
+
+
+.container2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card2 {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    font-size: 40px;
+    box-shadow: 0 0 15px #2d2a2a1a;
+    color: #eee;
+
+    animation: sample 2s 2s;
+    animation-fill-mode: both;
+    animation-play-state: paused;
+}
+
+.card2:hover{
+    animation-play-state: running;
+}
+
+@keyframes sample2{
+    0%{background: yellow; width: 250px;}
+    50%{background: green; width: 350px;}
+    100%{background: red; width: 450px;}
+}
