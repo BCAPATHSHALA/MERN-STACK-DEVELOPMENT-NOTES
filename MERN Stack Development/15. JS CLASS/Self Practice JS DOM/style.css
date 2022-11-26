@@ -1,0 +1,144 @@
+:root{
+    --main-color: brown;
+    --home-color: orange;
+    --aside-color: skyblue;
+    --text--color: white;
+    --heading-color: #222f3e;
+    --theme-color: white;
+    --footer-color: brown;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-div{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--main-color);
+    color: var(--text--color);
+}
+.header-div h1{
+    position: absolute;
+    left: 5%;
+}
+
+.nav-div{
+    display: flex;
+    background: var(--home-color);
+}
+
+.nav-div ul li{
+    display: inline-block;
+    padding: 4px;
+    margin: 5px;
+    color: var(--text--color);
+}
+
+.main-div{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 90%;
+    position: relative;
+}
+.content-div{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    background: var(--theme-color);
+}
+
+.content-div h2{
+    margin: 10px 10px;
+    color: var(--heading-color);
+}
+
+.content-div p{
+    font-size: medium;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-indent: 50px;
+    margin: 10px;
+    line-height: 28px;
+    color: var(--heading-color);
+}
+
+.aside-div{
+    width: 25%;
+    height: 100%;
+    background: var(--aside-color);
+}
+
+.aside-div ul li{
+    list-style: none;
+    margin-left: 5px;
+    padding: 2px;
+    color: var(--text--color);
+}
+
+.footer-div{
+    display: flex;
+    background-color: var(--footer-color);
+    width: 100vw;
+    height: 5%;
+    justify-content: right;
+    align-items: center;
+}
+
+.footer-div span{
+    margin-right: 10px;
+    color: var(--text--color);
+    font-size: medium;   
+}
+
+/* ====================== System Dark Theme Code in CSS ====================== */
+@media(prefers-color-scheme: dark){
+    .content-div{
+        background-color: #222f3e;
+    }
+    .content-div h2,p{
+        color: white;
+    }
+}
+
+/* ====================== Dartk Theme Styling ====================== */
+#id-name{
+    margin: 12px;
+    color: var(--heading-color);
+    cursor: pointer;
+}
+
+.class-name{
+    --main-color: #222f3e;
+    --home-color: red;
+    --aside-color: blueviolet;
+    --text--color: white;
+    --heading-color: white;
+    --theme-color:#222f3e;
+    --footer-color: orange;    
+}
+
+.dynamic{
+    background: red;
+    color: yellow;
+    width: 100px;
+    border-radius: 100px;
+    text-align: center;
+    font-size: small;
+}
