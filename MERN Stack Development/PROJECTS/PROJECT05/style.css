@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+    list-style: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    animation: color 10s linear infinite;
+    background: #000000;
+}
+.container {
+    width: 500px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+
+}
+
+
+.circle {
+    margin-top: 40px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #5e5e66;
+    box-shadow: 0px 0px 100px #e3e6e399;
+}
+
+.logo {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: url("https://yt3.ggpht.com/ytc/AMLnZu8pzDZIxsUyu_z7kL3Y8KoNBeH8a5pwUJv_dQZD=s900-c-k-c0x00ffffff-no-rj");
+    background-size: cover;
+    filter: brightness(1) contrast(2);
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #030303;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: rotate(0deg);
+        position: absolute;
+    }
+    10%{
+        color: #ffffff;
+    }
+    30%{
+        color: #000000;
+    }
+    50%{
+        color: white;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.text span {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    font-size: 1.5rem;
+    transform-origin: 0 150px;
+}
