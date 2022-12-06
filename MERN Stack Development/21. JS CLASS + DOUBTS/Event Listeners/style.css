@@ -1,0 +1,9 @@
+.mystyle{
+    width: 300px;
+    height: 300px;
+    border: 5px solid red;
+    padding: 10px;
+    background: #262626;
+    color: #fff;
+    font-size: 50px;
+}
