@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+
+<body>
+
+
+    <!-- =============== Input section =============== -->
+    <div class="main-container">
+        <form>
+            <input id="city-name" type="text" placeholder="Enter the city name" required>
+            <button type="submit">search</button>
+        </form>
+        <div class="inner-container">
+            <div class="loading">
+                <div class="spinner">
+                    <div class="dot1"></div>
+                    <div class="dot2"></div>
+                    <div class="dot3"></div>
+                </div>
+            </div>
+            <div class="city-container">
+                <div class="city-name">Meerut</div>
+                <div class="weather-condition">Clear</div>
+            </div>
+            <div class="temperature-container">
+                <div class="weather-icon">
+                    <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="image">
+                </div>
+                <div class="temp">21.00 °C</div>
+                <div class="minmax">
+                    <div class="min">Min: 21 °C</div>
+                    <div class="max">Max: 21 °C</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- =============== Script File =============== -->
+    <script src="script.js"></script>
+</body>
+
+</html>
