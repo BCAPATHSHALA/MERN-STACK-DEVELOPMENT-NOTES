@@ -1,0 +1,36 @@
+CUSTOM EVENT HANDLING✔️🤕
+===========================
+
+APP.JS😜
+========
+import CustomEvent from "./components/CustomEvent";
+
+function App() {
+  
+  function uploadDataFun(){
+    console.log("Start uploading the data....")
+  }
+
+  return (
+    <div>
+      <CustomEvent uploadData={uploadDataFun}/>
+    </div>
+  );
+}
+
+export default App;
+
+CUSTOMEVENT.JS😜
+=================
+
+import React from 'react'
+
+function CustomEvent(props) {
+  return (
+    <div>
+        <button onClick={props.uploadData}>Upload Data</button>
+    </div>
+  )
+}
+
+export default CustomEvent

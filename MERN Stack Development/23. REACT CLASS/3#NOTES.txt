@@ -1,0 +1,68 @@
+Passing the data in B/W sibling🤢🏠🤢
+AGAR CHILD SE PARENT ME DATA PASS KARNA HOGA TO CALLBACK CONCEPT USE HOGA
+Rule of transfer data: child1 to perent and parent to child2
+=============================================================================
+
+APP.JS😜
+========
+
+import { useState } from "react";
+import Child1 from "./components/Child1";
+import Child2 from "./components/Child2";
+
+function App() {
+  const [countInParent, setCountInParent] = useState(0);
+
+  function updateCountInParent(count) {
+    setCountInParent(count);
+  }
+
+  return (
+    <div>
+      <p>Inside the parent: {countInParent}</p>
+      <Child1 onCountUpdate={updateCountInParent} />
+      <Child2 anyData={countInParent}/>
+    </div>
+  );
+}
+
+export default App;
+
+CHILD1.JS😜
+===========
+import React, { useState } from "react";
+
+function Child1(props) {
+  const [countInChild1, setCountInChild1] = useState(0);
+    
+  function updateCountInChild1(){
+    setCountInChild1(countInChild1+1);
+    props.onCountUpdate(countInChild1+1);
+  }
+
+  return (
+    <div>
+      <p>Inside the Child1: {countInChild1}</p>
+      <button onClick={updateCountInChild1}>
+        Increment
+      </button>
+    </div>
+  );
+}
+
+export default Child1;
+
+CHILD2.JS😜
+===========
+import React from "react";
+
+function Child2(props) {
+  return (
+    <div>
+      <p>Inside the Child2: {props.anyData}</p>
+    </div>
+  );
+}
+
+export default Child2;
+

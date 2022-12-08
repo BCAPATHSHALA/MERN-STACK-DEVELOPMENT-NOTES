@@ -1,0 +1,58 @@
+NOTES.JS🤕 TO DO LIST APP📝
+============================
+import React, { useState } from "react";
+import SingleNote from "./SingleNote";
+
+function Notes() {
+  const [notes, setNotes] = useState([]);
+  const [curNote, setCurNote] = useState("");
+
+  function updateCurNote(event) {
+    setCurNote(event.target.value);
+  }
+
+  function addNote(event) {
+    const newNotesArray = [...notes, curNote];
+    setNotes(newNotesArray);
+  }
+
+  return (
+    <>
+      <input type="text" onChange={updateCurNote} />
+      <button onClick={addNote}>Submit</button>
+      <ul>
+        {notes.map((note, index) => {
+          return (
+            <li key={index}>
+              <SingleNote note={note} />
+            </li>
+          );
+        })}
+      </ul>
+    </>
+  );
+}
+
+export default Notes;
+
+
+SINGLENOTE.JS📝🤕
+==================
+
+import React from "react";
+
+function SingleNote(props) {
+  const noteStyle = {
+    padding: "20px",
+    borderRadius: "10px",
+    border: "2px solid green",
+    backgroundColor: "#eff2e4",
+  };
+  return (
+    <div style={noteStyle}>
+      <p>{props.note}</p>
+    </div>
+  );
+}
+
+export default SingleNote;

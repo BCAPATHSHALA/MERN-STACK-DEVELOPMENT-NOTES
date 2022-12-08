@@ -1,0 +1,182 @@
+COUNTER.JS:01😜
+===============
+import React from "react";
+
+function Counter() {
+  let count = 0;
+
+  function updateCount() {
+    count++;
+    console.log("Count is: " + count);
+  }
+  return (
+    <div>
+      <p>The value of count is: {count}</p>
+      <button onClick={updateCount}>Increment</button>
+    </div>
+  );
+}
+
+export default Counter;
+
+
+COUNTER.JS:02😜
+===============
+
+import React, { useState } from "react";
+
+function Counter() {
+  let [count, setCount] = useState(0);
+
+  function updateCount() {
+    setCount(count+1);
+    console.log("Count is: " + count);
+  }
+  return (
+    <div>
+      <p>The value of count is: {count}</p>
+      <button onClick={updateCount}>Increment</button>
+    </div>
+  );
+}
+
+export default Counter;
+
+
+COUNTER.JS:02😜
+===============
+import React, { useState } from "react";
+
+function Counter() {
+//   let [count, setCount] = useState(0);
+let countState= useState(0);
+let count = countState[0];
+let setCount = countState[1];
+
+  function updateCount() {
+    setCount(count + 1);
+    console.log("Count is: " + count);
+  }
+  return (
+    <>
+      <p>The value of count is: {count}</p>
+      <button onClick={updateCount}>Increment</button>
+    </>
+  );
+}
+
+export default Counter;
+
+
+
+FRUITS.JS :01😄
+===============
+import React, { useState } from "react";
+
+function Fruits() {
+  const [fruit, setFruit] = useState("Apple");
+
+  return (
+    <>
+      <p>The value of Fruit is: {fruit}</p>
+      <button onClick={() => setFruit("Papaya")}>Papaya</button>
+      <button onClick={() => setFruit("Mango")}>Mango</button>
+      <button onClick={() => setFruit("Banana")}>Banana</button>
+    </>
+  );
+}
+
+export default Fruits;
+
+
+
+FRUITS.JS :02😄
+===============
+import React, { useState } from "react";
+
+function Fruits() {
+  const [fruit, setFruit] = useState("Apple");
+
+  const updateFruit = (fruit) => {
+    setFruit(fruit);
+  };
+
+  function updateFrui1(fruit) {
+    setFruit(fruit);
+  }
+  return (
+    <>
+      <p>The value of Fruit is: {fruit}</p>
+      <button onClick={() => setFruit("Papaya")}>Papaya</button>
+      <button onClick={() => updateFrui1("Mango")}>Mango</button>
+      <button onClick={() => updateFruit("Banana")}>Banana</button>
+    </>
+  );
+}
+
+export default Fruits;
+
+FRUITS.JS :03😄
+===============
+
+
+import React, { useState } from "react";
+
+function Fruits() {
+  const [fruit, setFruit] = useState("Apple");
+  const [inputText, setInputText] = useState('');
+
+  const updateFruit = () =>{
+    setFruit(inputText);
+  }
+
+  function updateInputText(event){
+    const curInputValue = event.target.value;
+    setInputText(curInputValue);
+  }
+
+ 
+  return (
+    <>
+      <p>The value of Fruit is: {fruit}</p>
+      <input type="text" onChange={updateInputText}/>
+      <button onClick={() => updateFruit()}>Update</button>
+    </>
+  );
+}
+
+export default Fruits;
+
+NOTES.JS :01🤕
+==============
+
+
+import React, { useState } from "react";
+
+function Notes() {
+  const [notes, setNotes] = useState([]);
+  const [curNote, setCurNote] = useState("");
+
+  function updateCurNote(event) {
+    setCurNote(event.target.value);
+  }
+
+  function addNote(event) {
+    const newNotesArray = [...notes, curNote];
+    setNotes(newNotesArray);
+  }
+
+  return (
+    <>
+      <input type="text" onChange={updateCurNote} />
+      <button onClick={addNote}>Submit</button>
+      <ul>
+        {notes.map((note, index) => {
+          return <li key={index}>{note}</li>;
+        })}
+      </ul>
+    </>
+  );
+}
+
+export default Notes;
