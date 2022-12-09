@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.outer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.main-div {
+  background: #2f3e46;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 2px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #006d77;
+}
+.main-div h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+.main-div hr {
+  margin-bottom: 5px;
+}
+.main-div .main-heading {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background: #edf6f9;
+  border-radius: 6px;
+  padding: 10px;
+  z-index: 9999;
+}
+.main-heading p {
+  font-size: 10px;
+}
+.answers {
+  margin-top: -10px;
+  padding: 5px 19px;
+  background: #f2e8cf;
+  border-radius: 6px;
+  padding: 10px;
+  color: #2f3e46;
+}
