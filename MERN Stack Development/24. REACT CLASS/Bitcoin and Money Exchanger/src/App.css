@@ -1,0 +1,32 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #1d3557;
+  flex-wrap: wrap;
+}
+.ant-card {
+  border: 10px solid #f1faee;
+  width: 100%;
+  box-shadow: 0px 0px 5px #fff;
+}
+.selection-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  margin-top: 20px;
+}
+p {
+  color: #1d3557;
+  font-size: 20px;
+}
+h1 {
+  color: #1d3557;
+}
+.selection-box .select {
+  width: 150px;
+}
