@@ -1,0 +1,27 @@
+.app {
+  height: 100vh;
+  /* max-width: 727px; */
+  min-width: 727px;
+}
+
+.section {
+  background-color: rgb(220, 20, 60);
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 530px)  {
+  .app{
+    min-width: 530px;
+  }
+}
