@@ -1,0 +1,47 @@
+.addItemSection {
+  background-color: #1f1c1c;
+  width: 80%;
+  min-width: 590px;
+  max-width: 590px;
+  flex: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  border: 2px solid grey;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.addItemSection input {
+  outline: none;
+  width: 250px;
+  height: 30px;
+  border: 2px solid blueviolet;
+  text-align: center;
+  margin-right: 40px;
+  border-radius: 6px;
+}
+.addItemSection button {
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: blueviolet;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.addItemSection button:hover {
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 530px)  {
+  .addItemSection{
+    min-width: 450px;
+  }
+  .addItemSection input{
+    width: 200px;
+    margin-top: 5px;
+  }
+}
