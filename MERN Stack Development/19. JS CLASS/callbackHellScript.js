@@ -90,3 +90,20 @@ After 15 seconds, Person go to school
 */
 
 console.log("hi")
+
+/* ========== Callback Error Handling========== */
+function someTask(callback) {
+  console.log("something is being done here");
+  setTimeout(() => {
+    callback(error, "This is your movie");
+  }, 0);
+}
+
+someTask((error, data) => {
+  if (error) {
+    console.log("Not found");
+    throw error;
+  } else {
+    console.log(data);
+  }
+});
