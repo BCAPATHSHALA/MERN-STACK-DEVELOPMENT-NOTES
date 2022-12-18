@@ -1,0 +1,27 @@
+.navbar-link {
+  width: 100vw;
+  height: 30px;
+}
+.link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.navbar-link ul {
+  list-style: none;
+}
+.navbar-link ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.navbar-link ul li .link {
+  font-size: medium;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: large;
+  
+}

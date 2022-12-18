@@ -1,0 +1,125 @@
+.cartPage {
+  background-color: crimson;
+  width: 100vw;
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cartPage .titleH2 {
+  margin-top: 10px;
+  color: #ffffff;
+}
+.shoppingCartList {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 550px;
+  background-color: #303030;
+  overflow-y: auto;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+
+.shoppingCartList .shoppingCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  width: 100%;
+  height: 100px;
+  padding-inline: 30px;
+  border-radius: 10px;
+}
+.CartImg {
+  width: 90px;
+  height: 90px;
+}
+.CartImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.CartContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.CartContent .price {
+  font-weight: 700;
+}
+.CartContent .desc {
+  font-size: 15px;
+  color: white;
+}
+.CartQuentity {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+}
+.button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.button a {
+  text-decoration: none;
+}
+.CartReciept {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* background-color: #ffffff; */
+  width: 400px;
+  padding: 10px;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.cartAmmount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CheckOutBTn {
+  width: 100px;
+  height: 40px;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: 900;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.CheckOutBTn:hover {
+  transform: translateY(-10px);
+}
+
+/* Scroll bar styling */
+.shoppingCartList::-webkit-scrollbar {
+  width: 12px;
+}
+
+.shoppingCartList::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.271);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.shoppingCartList::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
