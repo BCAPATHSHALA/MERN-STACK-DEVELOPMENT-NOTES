@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const User = require("./models/User");
 
 const mongoUri =
-  "mongodb+srv://manoj:EXuAK68GmNuk5W4s@cluster0.ophpfue.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://manoj:<password>@cluster0.ophpfue.mongodb.net/?retryWrites=true&w=majority";
 
 try {
   mongoose.connect(
