@@ -3,7 +3,7 @@ const User = require("./models/User");
 
 module.exports = () => {
   const mongoUri =
-    "mongodb+srv://manoj:EXuAK68GmNuk5W4s@cluster0.ophpfue.mongodb.net/?retryWrites=true&w=majority";
+    "mongodb+srv://manoj:<pw>@cluster0.ophpfue.mongodb.net/?retryWrites=true&w=majority";
 
   try {
     mongoose.connect(
